@@ -1,26 +1,116 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "StoreBackend.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StoreBackend.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Domain.dll": {}
+        }
+      },
+      "StoreBackend.DomainService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "StoreBackend.Domain": "1.0.0",
+          "StoreBackend.Dto": "1.0.0",
+          "StoreBackend.Exceptions": "1.0.0",
+          "StoreBackend.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StoreBackend.DomainService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.DomainService.dll": {}
+        }
+      },
+      "StoreBackend.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StoreBackend.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Dto.dll": {}
+        }
+      },
+      "StoreBackend.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StoreBackend.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Exceptions.dll": {}
+        }
+      },
+      "StoreBackend.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "StoreBackend.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StoreBackend.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "StoreBackend.Domain/1.0.0": {
+      "type": "project",
+      "path": "../StoreBackend.Domain/StoreBackend.Domain.csproj",
+      "msbuildProject": "../StoreBackend.Domain/StoreBackend.Domain.csproj"
+    },
+    "StoreBackend.DomainService/1.0.0": {
+      "type": "project",
+      "path": "../StoreBackend.DomainService/StoreBackend.DomainService.csproj",
+      "msbuildProject": "../StoreBackend.DomainService/StoreBackend.DomainService.csproj"
+    },
+    "StoreBackend.Dto/1.0.0": {
+      "type": "project",
+      "path": "../StoreBackend.Dto/StoreBackend.Dto.csproj",
+      "msbuildProject": "../StoreBackend.Dto/StoreBackend.Dto.csproj"
+    },
+    "StoreBackend.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../StoreBackend.Exceptions/StoreBackend.Exceptions.csproj",
+      "msbuildProject": "../StoreBackend.Exceptions/StoreBackend.Exceptions.csproj"
+    },
+    "StoreBackend.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../StoreBackend.Infrastructure/StoreBackend.Infrastructure.csproj",
+      "msbuildProject": "../StoreBackend.Infrastructure/StoreBackend.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "StoreBackend.DomainService >= 1.0.0",
+      "StoreBackend.Dto >= 1.0.0",
+      "StoreBackend.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\Profesores\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj",
+      "projectUniqueName": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj",
       "projectName": "StoreBackend.Facade",
-      "projectPath": "C:\\Users\\ADMIN\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\obj\\",
+      "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj",
+      "packagesPath": "C:\\Users\\Profesores\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Profesores\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -30,9 +120,18 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.DomainService\\StoreBackend.DomainService.csproj": {
+              "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.DomainService\\StoreBackend.DomainService.csproj"
+            },
+            "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj": {
+              "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj"
+            },
+            "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Infrastructure\\StoreBackend.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Infrastructure\\StoreBackend.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -45,11 +144,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "imports": [
           "net461",
@@ -67,7 +165,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

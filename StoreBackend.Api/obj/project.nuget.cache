@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "xzvaEwzmP1U=",
+  "dgSpecHash": "f39frMnZlMk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Documents\\StoreBackend\\StoreBackend.Api\\StoreBackend.Api.csproj",
+  "projectFilePath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\StoreBackend.Api\\StoreBackend.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512"
+    "C:\\Users\\Profesores\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.13\\microsoft.aspnetcore.openapi.10.0.13.nupkg.sha512",
+    "C:\\Users\\Profesores\\.nuget\\packages\\microsoft.openapi\\2.12.2\\microsoft.openapi.2.12.2.nupkg.sha512"
   ],
   "logs": []
 }

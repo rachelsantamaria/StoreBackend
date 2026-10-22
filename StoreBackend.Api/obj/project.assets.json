@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net10.0": {
       "Microsoft.AspNetCore.OpenApi/10.0.13": {
@@ -35,6 +35,80 @@
           "lib/net8.0/Microsoft.OpenApi.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "StoreBackend.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StoreBackend.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Domain.dll": {}
+        }
+      },
+      "StoreBackend.DomainService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "StoreBackend.Domain": "1.0.0",
+          "StoreBackend.Dto": "1.0.0",
+          "StoreBackend.Exceptions": "1.0.0",
+          "StoreBackend.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StoreBackend.DomainService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.DomainService.dll": {}
+        }
+      },
+      "StoreBackend.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StoreBackend.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Dto.dll": {}
+        }
+      },
+      "StoreBackend.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StoreBackend.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Exceptions.dll": {}
+        }
+      },
+      "StoreBackend.Facade/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "StoreBackend.DomainService": "1.0.0",
+          "StoreBackend.Dto": "1.0.0",
+          "StoreBackend.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StoreBackend.Facade.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Facade.dll": {}
+        }
+      },
+      "StoreBackend.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "StoreBackend.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StoreBackend.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StoreBackend.Infrastructure.dll": {}
         }
       }
     }
@@ -75,27 +149,59 @@
         "microsoft.openapi.2.12.2.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "StoreBackend.Domain/1.0.0": {
+      "type": "project",
+      "path": "../src/StoreBackend.Domain/StoreBackend.Domain.csproj",
+      "msbuildProject": "../src/StoreBackend.Domain/StoreBackend.Domain.csproj"
+    },
+    "StoreBackend.DomainService/1.0.0": {
+      "type": "project",
+      "path": "../src/StoreBackend.DomainService/StoreBackend.DomainService.csproj",
+      "msbuildProject": "../src/StoreBackend.DomainService/StoreBackend.DomainService.csproj"
+    },
+    "StoreBackend.Dto/1.0.0": {
+      "type": "project",
+      "path": "../src/StoreBackend.Dto/StoreBackend.Dto.csproj",
+      "msbuildProject": "../src/StoreBackend.Dto/StoreBackend.Dto.csproj"
+    },
+    "StoreBackend.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../src/StoreBackend.Exceptions/StoreBackend.Exceptions.csproj",
+      "msbuildProject": "../src/StoreBackend.Exceptions/StoreBackend.Exceptions.csproj"
+    },
+    "StoreBackend.Facade/1.0.0": {
+      "type": "project",
+      "path": "../src/StoreBackend.Facade/StoreBackend.Facade.csproj",
+      "msbuildProject": "../src/StoreBackend.Facade/StoreBackend.Facade.csproj"
+    },
+    "StoreBackend.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../src/StoreBackend.Infrastructure/StoreBackend.Infrastructure.csproj",
+      "msbuildProject": "../src/StoreBackend.Infrastructure/StoreBackend.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.AspNetCore.OpenApi >= 10.0.13"
+      "Microsoft.AspNetCore.OpenApi >= 10.0.13",
+      "StoreBackend.Dto >= 1.0.0",
+      "StoreBackend.Facade >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\Profesores\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\documents\\StoreBackend\\StoreBackend.Api\\StoreBackend.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Profesores\\Documents\\StoreBackend\\StoreBackend.Api\\StoreBackend.Api.csproj",
       "projectName": "StoreBackend.Api",
-      "projectPath": "C:\\Users\\ADMIN\\documents\\StoreBackend\\StoreBackend.Api\\StoreBackend.Api.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\documents\\StoreBackend\\StoreBackend.Api\\obj\\",
+      "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\StoreBackend.Api\\StoreBackend.Api.csproj",
+      "packagesPath": "C:\\Users\\Profesores\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\StoreBackend.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Profesores\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -105,9 +211,15 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj": {
+              "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj"
+            },
+            "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj": {
+              "projectPath": "C:\\Users\\Profesores\\Documents\\StoreBackend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -120,11 +232,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": {
@@ -151,7 +262,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

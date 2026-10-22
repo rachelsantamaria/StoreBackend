@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StoreBackend.Domain\StoreBackend.Domain.csproj" />
+    <ProjectReference Include="..\StoreBackend.Dto\StoreBackend.Dto.csproj" />
+    <ProjectReference Include="..\StoreBackend.Exceptions\StoreBackend.Exceptions.csproj" />
+    <ProjectReference Include="..\StoreBackend.Infrastructure\StoreBackend.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
