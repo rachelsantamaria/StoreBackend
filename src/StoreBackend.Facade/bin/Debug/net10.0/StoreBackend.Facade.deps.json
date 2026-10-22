@@ -1,0 +1,102 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "StoreBackend.Facade/1.0.0": {
+        "dependencies": {
+          "StoreBackend.DomainService": "1.0.0",
+          "StoreBackend.Dto": "1.0.0",
+          "StoreBackend.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "StoreBackend.Facade.dll": {}
+        }
+      },
+      "StoreBackend.Domain/1.0.0": {
+        "runtime": {
+          "StoreBackend.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StoreBackend.DomainService/1.0.0": {
+        "dependencies": {
+          "StoreBackend.Domain": "1.0.0",
+          "StoreBackend.Dto": "1.0.0",
+          "StoreBackend.Exceptions": "1.0.0",
+          "StoreBackend.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "StoreBackend.DomainService.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StoreBackend.Dto/1.0.0": {
+        "runtime": {
+          "StoreBackend.Dto.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StoreBackend.Exceptions/1.0.0": {
+        "runtime": {
+          "StoreBackend.Exceptions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StoreBackend.Infrastructure/1.0.0": {
+        "dependencies": {
+          "StoreBackend.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StoreBackend.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StoreBackend.Facade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StoreBackend.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StoreBackend.DomainService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StoreBackend.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StoreBackend.Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StoreBackend.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
