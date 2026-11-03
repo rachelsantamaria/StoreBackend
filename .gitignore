@@ -1,0 +1,14 @@
+.docker/
+docker-compose.override.yml
+
+.dbeaver/
+*.sql
+
+src/**/bin/
+src/**/obj/
+
+.vs/
+.vscode/
+
+.DS_Store
+Thumbs.db
