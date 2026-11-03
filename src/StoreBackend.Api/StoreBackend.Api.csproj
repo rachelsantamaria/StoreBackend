@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\StoreBackend.Dto\StoreBackend.Dto.csproj" />
-    <ProjectReference Include="..\src\StoreBackend.Facade\StoreBackend.Facade.csproj" />
+    <ProjectReference Include="..\StoreBackend.Dto\StoreBackend.Dto.csproj" />
   </ItemGroup>
 
 </Project>

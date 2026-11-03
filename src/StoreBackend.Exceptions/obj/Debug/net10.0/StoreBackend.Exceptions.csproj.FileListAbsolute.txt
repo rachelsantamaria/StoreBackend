@@ -10,3 +10,15 @@ C:\Users\Profesores\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug
 C:\Users\Profesores\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\refint\StoreBackend.Exceptions.dll
 C:\Users\Profesores\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.pdb
 C:\Users\Profesores\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\ref\StoreBackend.Exceptions.dll
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\bin\Debug\net10.0\StoreBackend.Exceptions.deps.json
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\bin\Debug\net10.0\StoreBackend.Exceptions.dll
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\bin\Debug\net10.0\StoreBackend.Exceptions.pdb
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.sourcelink.json
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.dll
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\refint\StoreBackend.Exceptions.dll
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\StoreBackend.Exceptions.pdb
+C:\Users\ADMIN\Documents\StoreBackend\src\StoreBackend.Exceptions\obj\Debug\net10.0\ref\StoreBackend.Exceptions.dll
