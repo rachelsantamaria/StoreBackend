@@ -54,4 +54,18 @@ public class ProductController : ControllerBase
             return NotFound();
         }
     }
+    [HttpPost]
+    public async Task<IActionResult> CreateProduct([FromBody] CreateProductRequestModel request)
+    {
+        try
+        {
+            var productDto = Mappers.ProductMapper.ToDto(request);
+            await productFacade.AddAsync(productDto);
+            return Ok();
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }
