@@ -13,6 +13,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StoreBackend.Dto\StoreBackend.Dto.csproj" />
+    <ProjectReference Include="..\StoreBackend.Exceptions\StoreBackend.Exceptions.csproj" />
+    <ProjectReference Include="..\StoreBackend.Domain\StoreBackend.Domain.csproj" />
+    <ProjectReference Include="..\StoreBackend.Infrastructure\StoreBackend.Infrastructure.csproj" />
+    <ProjectReference Include="..\StoreBackend.Facade\StoreBackend.Facade.csproj" />
+    <ProjectReference Include="..\StoreBackend.DomainService\StoreBackend.DomainService.csproj" />
   </ItemGroup>
 
 </Project>
